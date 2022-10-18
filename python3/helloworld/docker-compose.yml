@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  helloworld:
+    build:
+      context: .
+      args:
+        VENDOR_TAG: latest
+    hostname: helloworld
+    environment:
+      - TZ=America/Chicago
